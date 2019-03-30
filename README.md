@@ -37,6 +37,7 @@ This repository contains an example of embedding the Signal Sciences Agent in th
             value: SETME
           - name: SIGSCI_SECRETACCESSKEY
             value: SETMETOO
+    ```
     - And defining the volumes used above:
     ```
     volumes:
@@ -48,7 +49,7 @@ This repository contains an example of embedding the Signal Sciences Agent in th
           items:
             - key: nginx.tmpl
               path: nginx.tmpl
-
+    ```
 ### Setup:
 
 #### 1. Set Agent Keys in mandatory.yaml
