@@ -12,7 +12,7 @@ This repository contains an example of embedding the Signal Sciences Agent in th
   - This file contains a template for nginx to build its nginx.conf. The Signal Sciences Module is included as Lua directives within the template, and is loaded via a configMap as setup below
 - [mandatory.yaml](mandatory.yaml)
   - This file contains a modified template of the Generic Ingress Controller Deployment as described at https://kubernetes.github.io/ingress-nginx/deploy/#prerequisite-generic-deployment-command. The main additions are:
-    - Changing the ingress container to load the custom Signal Sciences Agent container, adding Volume mounts for the socket file communication between the Agent container and Module/ingress container, as well as a volume mount for the nginx template:
+    - Changing the ingress container to load the custom Signal Sciences Module/ingress container, adding Volume mounts for the socket file communication between the Agent container and Module/ingress container, as well as a volume mount for the nginx template:
     ```
     containers:
       - name: nginx-ingress-controller
